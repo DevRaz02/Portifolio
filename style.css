@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--branco);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --preto: #0F0C1A;
+    /* Preto com tonalidade roxa */
+    --roxo-escuro: #2A1065;
+    /* Roxo profundo */
+    --roxo-vibrante: #6D28D9;
+    /* Destaques */
+    --roxo-claro: #B19CD9;
+    /* Hover/Detalhes */
+    --branco: #F8F9FA;
+    /* Branco suave (evita #FFFFFF puro) */
+    --cinza-escuro: #1E1E24;
+    /* Fundos */
+    --cinza-medio: #3A3A44;
+    /* Bordas */
+    --cinza-claro: #E0E0E5;
+    /* Textos secundários */
+
+    --gradiente-roxo: linear-gradient(135deg, var(--roxo-escuro), var(--preto));
+}
+
+body {
+    background-color: var(--cinza-escuro);
+    margin-top: 90px;
+}
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    background: rgba(24, 15, 32, 0.8);
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem
+}
+
+.menu-link {
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menu-link::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--roxo-vibrante), var(--roxo-claro));
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+.cabecalho {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: 4px solid var(--preto);
+    margin-top: 5rem;
+    animation: pulsar-neon 1.3s linear infinite;
+}
+
+@keyframes pulsar-neon {
+    from {
+        box-shadow: 0 0 5px rgb(119, 0, 255), 0 0 10px #01036d;
+        border-color: #280147;
+    }
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 50px;
+    color: var(--roxo-claro);
+    font-weight: bold;
+}
+
+.cabecalho-titulo {
+    font-size: 1.5rem;
+    margin-bottom: 14rem;
+    border-right: 5px solid;
+    animation: typing 2.5s steps(22),
+        cursor .4s step-end infinite alternate
+}
+
+@keyframes typing {
+    from {
+        width: 1;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.sobre {
+    padding: 6rem 2rem;
+    margin-top: 80%;
+}
+
+.sobre-titulo {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+
+.sobre-caixa {
+    padding: 2.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid var(--roxo-vibrante);
+    backdrop-filter: blur(10px);
+    background: rgba(26, 18, 36, 0.5);
+}
+
+.sobre-lista {
+    margin: 1.5rem 0;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-paragrafo {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+span {
+    color: var(--roxo-claro);
+}
+
+.projetos {
+    padding: 60rem 20rem;
+}
+
+
+.projetos-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projetos-card {
+    background: rgba(26, 18, 36, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--roxo-vibrante);
+    overflow: hidden;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.projetos-card:hover {
+    box-shadow: 0 10px 20px var(--roxo-escuro);
+    transform: translateY(-10px) scale(1.03);
+}
+
+.Projetos-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    margin-top: 65px;
+}
+
+.projetos-imagem {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.caixa-textos-projetos {
+    padding: 0.1rem;
+
+}
+
+.paragrafo-projeto {
+    color: rgba(226, 232, 240, 0.8);
+    line-height: 1.25rem;
+}
+
+.info-projetos {
+    margin-bottom: 5px;
+}
+
+.Contatos {
+    padding: 6rem 2rem;
+}
+
+.Contatos-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(26, 18, 36, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    gap: 1.8rem;
+    margin-top: 2rem;
+    ;
+    border: 1px solid var(--roxo-vibrante);
+    border-radius: 10px;
+}
+
+.campo-form {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: var(--branco);
+    border: 1px solid var(--preto);
+    outline: none;
+}
+
+.campo-form:focus {
+    border-color: var(--cinza-medio);
+    box-shadow: 0 0 10px var(--roxo-vibrante);
+}
+
+.grupo-form {
+    margin-bottom: 1.5rem;
+}
+
+.botao-form {
+    color: var(--branco);
+    background: #0cd83fa9;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5 ease;
+}
+
+.botao-form:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px #13a84e;
+}
+
+.particulas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 10% 20%, var(--roxo-claro) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, var(--roxo-vibrante) 0%, transparent 25%);
+}
+
+@keyframes pulsar-neon {
+    from {
+        box-shadow: 0 0 5px rgb(119, 0, 255), 0 0 10px #01036d;
+        border-color: #280147;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .cabecalho-titulo {
+        font-size: 1.2rem;
+    }
+
+    .projetos-caixa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px;
+    }
+
+    .projetos-card {
+        padding: 1rem;
+    }
+}
