@@ -9,6 +9,7 @@
     />
     <link rel="icon" href="RazDesigns.png" />
     <title>Raz_Designs | Portifólio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -53,24 +54,28 @@
             <img src="projeto_1.png" alt="Projeto 1" class="projetos-imagem">
             <div class="caixa-textos-projetos">
             <h3 class="info-projetos">Site de Academia</h3>
-            <p class="paragrafo-projeto">Um site em referencia a Minha academia</p>
-          </div>
+            <p class="paragrafo-projeto">Meu Primeiro Projeto com HTML e CSS </p>
+          </div> 
+          <button class="btn_projeto">Ir para o Site</button>
           </div>
 
           <div class="projetos-card">
-            <img src="projeto_2.png" alt="Projeto 2" class="projetos-imagem">
+            <img src="" alt="Projeto 2" class="projetos-imagem">
             <div class="caixa-textos-projetos">
             <h3 class="info-projetos">Quiz De Programação</h3>
             <p class="paragrafo-projeto">Quiz simples de Programação!</p>
+            
           </div>
+          <button class="btn_projeto"><a href=""></a>Ir para o Site</button>
           </div>
 
           <div class="projetos-card">
-            <img src="RazDesigns.png" alt="Projeto 3" class="projetos-imagem">
+            <img src="Relogio_IMG.JS.jpeg" alt="Projeto 3" class="projetos-imagem"> 
             <div class="caixa-textos-projetos">
-            <h3 class="info-projetos">minha logo teporaria</h3>
-            <p class="paragrafo-projeto"> Sem outro projeto então uma logo temporaria!</p>
+            <h3 class="info-projetos">Relogio Em Tempo real</h3>
+            <p class="paragrafo-projeto"> Feito Com HTML,CSS mas o foco em JS</p>
           </div>
+          <button class="btn_projeto"><a href=""></a>Ir para o Site</button>
           </div>
       </section>
 
@@ -80,14 +85,25 @@
         <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(Event)">
 
           <div class="grupo-form">
-            <input placeholder="Nome" class="campo-form" id="nome">
+            <input placeholder="Digite seu Nome " class="campo-form" id="nome">
           </div>
           
           <div class="grupo-form">
-            <textarea class="campo-form"placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+            <textarea class="campo-form"placeholder="Digite sua Mensagem" rows="4" id="mensagem"></textarea>
           </div>
 
           <button type="submit" class="botao-form"> Enviar WhatsApp</button>
+          <div class="caixa-textos-contato">
+            <p>Outras redes sociais:</p>
+
+            <div class="Git-Hub">
+            <a href="https://github.com/DevRaz02" target="_blank"><i class="bi-github"></i></a>
+            </div>
+            <div class="Linkedin">
+              <a href="https://www.linkedin.com/in/ra%C3%BAl-nascimento-852a512a1/" target="_blank">
+                <i class="bi bi-linkedin"></i>
+              </a>
+          </div>
         </form>
       </section>
 
@@ -170,7 +186,7 @@
           const mensagem = document.getElementById('mensagem').value;
           const telefone ='5511958336279';
 
-          const texto = `Olá! Me chamo ${nome}, ${mensagem}`
+          const texto = `Olá! Me chamo ${nome} , ${mensagem}`
           const msgFormatada = encodeURIComponent(texto)
           const url = `https://wa.me/${telefone}?text=$${msgFormatada}`
 

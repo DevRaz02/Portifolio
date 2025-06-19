@@ -12,21 +12,24 @@ html {
 
 :root {
     --preto: #0F0C1A;
-    /* Preto com tonalidade roxa */
+
     --roxo-escuro: #2A1065;
-    /* Roxo profundo */
+
     --roxo-vibrante: #6D28D9;
-    /* Destaques */
+
     --roxo-claro: #B19CD9;
-    /* Hover/Detalhes */
+
     --branco: #F8F9FA;
-    /* Branco suave (evita #FFFFFF puro) */
+
     --cinza-escuro: #1E1E24;
-    /* Fundos */
+
     --cinza-medio: #3A3A44;
-    /* Bordas */
+
     --cinza-claro: #E0E0E5;
-    /* Textos secundários */
+
+    --azul-claro: #0A66C2;
+
+    --azul-escuro: #004182;
 
     --gradiente-roxo: linear-gradient(135deg, var(--roxo-escuro), var(--preto));
 }
@@ -108,9 +111,8 @@ h1 {
 .cabecalho-titulo {
     font-size: 1.5rem;
     margin-bottom: 14rem;
-    border-right: 5px solid;
-    animation: typing 2.5s steps(22),
-        cursor .4s step-end infinite alternate
+    border-right: 2px solid;
+    animation: typing 2.5s steps(22), cursor 0.5s step-end infinite alternate;
 }
 
 @keyframes typing {
@@ -186,14 +188,10 @@ span {
     overflow: hidden;
     padding: 1.5rem;
     gap: 1.5rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
+
+
 }
 
-.projetos-card:hover {
-    box-shadow: 0 10px 20px var(--roxo-escuro);
-    transform: translateY(-10px) scale(1.03);
-}
 
 .Projetos-titulo {
     text-align: center;
@@ -206,6 +204,29 @@ span {
     height: 100px;
     width: 100%;
     object-fit: cover;
+}
+
+.btn_projeto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    background: var(--roxo-vibrante);
+    box-shadow: #6D28D9 px 1px 2px 2px;
+    color: var(--branco);
+    border: 2px solid var(--roxo-escuro);
+    border-radius: 5px;
+    padding: 0.5rem 0.4rem;
+    transition: all 0.2s ease;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn_projeto:hover {
+    box-shadow: 0 10px 20px var(--roxo-escuro);
+    transform: translateY(-5px);
+    color: var(--preto);
+    background-color: var(--roxo-claro);
 }
 
 .caixa-textos-projetos {
@@ -280,6 +301,35 @@ span {
 .botao-form:hover {
     transform: translateY(-4px);
     box-shadow: 0 5px 15px #13a84e;
+}
+
+.caixa-textos-contato {
+    display: flex;
+    font-size: 1.2rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    gap: 1rem;
+}
+
+.Git-Hub i {
+    color: var(--cinza-medio);
+    font-size: 1.5rem;
+}
+
+.Git-Hub i:hover {
+    color: var(--branco);
+
+}
+
+.Linkedin i {
+    font-size: 1.5rem;
+    color: var(--azul-escuro);
+}
+
+.Linkedin i:hover {
+    color: var(--azul-claro);
 }
 
 .particulas {
