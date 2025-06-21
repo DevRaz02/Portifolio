@@ -179,7 +179,7 @@
             }
         });
         
-        function enviarWhats(Event) {
+        function enviarWhats(event) {
           event.preventDefault()
         
           const nome = document.getElementById('nome').value;
@@ -191,6 +191,13 @@
           const url = `https://wa.me/${telefone}?text=${msgFormatada}`
 
           window.open(url, '_blank')
+
+          if(!nome || !mensagem) {
+            alert('Por favor, preencha todos os campos antes de enviar a mensagem.')
+          } else {
+            document.getElementById('formulario').reset();
+            alert('Mensagem enviada com sucesso!')
+          }
         }
         </script>
   </body>
