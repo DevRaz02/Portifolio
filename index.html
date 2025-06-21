@@ -185,19 +185,16 @@
           const nome = document.getElementById('nome').value;
           const mensagem = document.getElementById('mensagem').value;
           const telefone ='5511958336279';
+          
+          if(!nome || !mensagem) {
+            alert('Por favor, preencha todos os campos antes de enviar a mensagem.')
+            }
 
           const texto = `Olá! Me chamo ${nome} , ${mensagem}`
           const msgFormatada = encodeURIComponent(texto)
           const url = `https://wa.me/${telefone}?text=${msgFormatada}`
 
-          window.open(url, '_blank')
-
-            if(!nome || !mensagem) {
-            alert('Por favor, preencha todos os campos antes de enviar a mensagem.')
-            } else {
-              document.getElementById('formulario').reset();
-              alert('Mensagem enviada com sucesso!')
-            }
+          window.open(url, '_blank') 
         }
         </script>
   </body>
