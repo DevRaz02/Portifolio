@@ -206,7 +206,7 @@ span {
     object-fit: cover;
 }
 
-.btn_projeto {
+.btn-projeto {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -222,7 +222,7 @@ span {
     cursor: pointer;
 }
 
-.btn_projeto:hover {
+.btn-projeto:hover {
     box-shadow: 0 10px 20px var(--roxo-escuro);
     transform: translateY(-5px);
     color: var(--preto);
@@ -348,6 +348,7 @@ span {
 
 a {
     text-decoration: none;
+
 }
 
 @keyframes pulsar-neon {
@@ -375,21 +376,5 @@ a {
 
     .projetos-card {
         padding: 1rem;
-    }
-}
-
-.fade-in {
-    animation: fadeInUp 1.2s ease-in-out both;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
     }
 }
