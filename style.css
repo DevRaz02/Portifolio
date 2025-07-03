@@ -346,6 +346,10 @@ span {
         radial-gradient(circle at 90% 80%, var(--roxo-vibrante) 0%, transparent 25%);
 }
 
+a {
+    text-decoration: none;
+}
+
 @keyframes pulsar-neon {
     from {
         box-shadow: 0 0 5px rgb(119, 0, 255), 0 0 10px #01036d;
@@ -371,5 +375,21 @@ span {
 
     .projetos-card {
         padding: 1rem;
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 1.2s ease-in-out both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
