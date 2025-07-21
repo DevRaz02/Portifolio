@@ -36,7 +36,6 @@ html {
 
 body {
     background-color: var(--cinza-escuro);
-    margin-top: 90px;
 }
 
 .navegacao {
@@ -90,8 +89,8 @@ body {
     height: 200px;
     border-radius: 20%;
     border: 4px solid var(--preto);
-    margin-top: 5rem;
-    animation: pulsar-neon 1.3s linear infinite;
+    margin-top: 8rem;
+    animation: pulsar-neon 1.5s linear infinite;
 }
 
 @keyframes pulsar-neon {
@@ -110,8 +109,8 @@ h1 {
 
 .cabecalho-titulo {
     font-size: 1.5rem;
-    margin-bottom: 14rem;
     border-right: 2px solid;
+    margin-bottom: 5em;
     animation: typing 2.5s steps(22), cursor 0.5s step-end infinite alternate;
 }
 
@@ -128,15 +127,14 @@ h1 {
 }
 
 .sobre {
-    padding: 6rem 2rem;
-    margin-top: 80%;
+    padding: 4rem 1rem;
 }
 
 .sobre-titulo {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 50px;
-    margin-top: 70px;
+    margin-top: 9rem;
 }
 
 .sobre-caixa {
@@ -157,20 +155,24 @@ h1 {
     align-items: center;
 }
 
-.sobre-paragrafo {
-    margin-top: 2rem;
+.sobre-caixa p {
+    margin-bottom: 0.9rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #c0c0c0;
+    transition: all 0.5s ease;
+
+}
+
+.sobre-caixa p:hover {
+    font-size: 1.1rem;
+    color: var(--branco);
 }
 
 span {
     color: var(--roxo-claro);
 }
-
-.projetos {
-    padding: 60rem 20rem;
-}
-
 
 .projetos-caixa {
     display: grid;
@@ -178,6 +180,8 @@ span {
     gap: 2.5rem;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 1em;
+
 }
 
 .projetos-card {
@@ -188,8 +192,6 @@ span {
     overflow: hidden;
     padding: 1.5rem;
     gap: 1.5rem;
-
-
 }
 
 
@@ -197,7 +199,7 @@ span {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
-    margin-top: 65px;
+    margin-top: 3em;
 }
 
 .projetos-imagem {
@@ -240,18 +242,17 @@ span {
 }
 
 .info-projetos {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .Contatos {
     padding: 6rem 2rem;
+    margin-top: 6.5em;
 }
 
 .Contatos-titulo {
     text-align: center;
     font-size: 2.5rem;
-    margin-top: 20px;
-    margin-bottom: 50px;
 }
 
 .formulario-contato {
@@ -262,7 +263,6 @@ span {
     padding: 2rem;
     gap: 1.8rem;
     margin-top: 2rem;
-    ;
     border: 1px solid var(--roxo-vibrante);
     border-radius: 10px;
 }
@@ -348,14 +348,6 @@ span {
 
 a {
     text-decoration: none;
-
-}
-
-@keyframes pulsar-neon {
-    from {
-        box-shadow: 0 0 5px rgb(119, 0, 255), 0 0 10px #01036d;
-        border-color: #280147;
-    }
 }
 
 @media (max-width: 600px) {
@@ -368,10 +360,15 @@ a {
         font-size: 1.2rem;
     }
 
+    .sobre-caixa {
+        padding: 2rem;
+        margin: 2rem;
+    }
+
     .projetos-caixa {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin: 10px;
+        margin: 20px;
     }
 
     .projetos-card {

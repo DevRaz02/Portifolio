@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+  <meta charset="UTF-8" />
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,192 +10,281 @@
     />
     <link rel="icon" href="img/RazDesigns.png" />
     <title>Raz_Designs | Portifólio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <canvas id="particulas-canvas" class="particulas"></canvas>
-      <nav class="navegacao">
-        <ul class="menu">
-          <li><a href="#inicio" class="menu-link">Início</a></li>
-          <li><a href="#sobre" class="menu-link">Sobre</a></li>
-          <li><a href="#projetos" class="menu-link">Projetos</a></li>
-          <li><a href="#contato" class="menu-link"> Contato</a></li>
-        </ul>
-      </nav>
+
+    <nav class="navegacao">
+      <ul class="menu">
+        <li><a href="#inicio" class="menu-link">Início</a></li>
+        <li><a href="#sobre" class="menu-link">Sobre</a></li>
+        <li><a href="#projetos" class="menu-link">Projetos</a></li>
+        <li><a href="#contato" class="menu-link">Contato</a></li>
+      </ul>
+    </nav>
 
     <main id="inicio" class="cabecalho">
-        <img src="img/RazDesigns.png" alt="Raz_Designs" class="foto-perfil">
-        <h1>Raz_Designs</h1>
-        <p class="cabecalho-titulo"> Desenvolvedor Front-End</p>
+      <img src="img/RazDesigns.png" alt="Raz_Designs" class="foto-perfil" />
+
+      <h1>Raz_Designs</h1>
+      <p class="cabecalho-titulo">Desenvolvedor Front-End</p>
 
       <section id="sobre" class="Sobre">
         <h2 class="sobre-titulo">Sobre Mim</h2>
         <div class="sobre-caixa">
+          <p>
+            Me chamo Raúl, mas pode me chamar de <strong>Raz_Designs</strong>.
+            Sempre fui curioso com tecnologia, mas demorei a acreditar que
+            programação era pra mim.
+          </p>
+
+          <p>
+            Quando dei o primeiro passo, descobri que o desenvolvimento
+            front-end combina com meu lado criativo e detalhista.
+          </p>
+
+          <p>
+            Gosto de aprender na prática, criando projetos e enfrentando
+            desafios reais. Hoje, estou focado em evoluir com JavaScript moderno
+            e React.
+          </p>
+
+          <p>
+            Estou em busca da minha primeira oportunidade como desenvolvedor
+            front-end, pronto para transformar ideias em interfaces funcionais e
+            bonitas.
+          </p>
+
           <ul class="sobre-lista">
-            <li><span>✔ HTML5</span> semântico e acessível</li>
-            <li><span>✔ CSS3 avançado</span> (Flexbox, Grid, animações)</li>
-            <li><span>✔ FrameWorks como Tailwind, bootstrap e Bulma</span> para estilos mais eficientes</li>
-            <li><span>✔ JavaScript essencial</span> (DOM, eventos, funções)</li>
-            <p class="sobre-paragrafo">
-              <strong>Objetivo:</strong> Busco minha primeira oportunidade profissional para aplicar esses conhecimentos, enquanto continuo me aprofundando em <span>React</span>, <span>JavaScript moderno</span> e meu próximo projeto é criar uma <span>API</span> do meu MOBA favorito.
-            </p>
+            <li>
+              ✔️ Experiência com <strong>HTML5</strong> semântico e acessível
+            </li>
+            <li>
+              ✔️ Domínio de <strong>CSS3 avançado</strong> (Flexbox, Grid,
+              animações)
+            </li>
+            <li>
+              ✔️ Utilização de <strong>frameworks</strong> como Tailwind,
+              Bootstrap e Bulma
+            </li>
+            <li>
+              ✔️ Prática com <strong>JavaScript</strong> (DOM, eventos, funções)
+            </li>
           </ul>
         </div>
       </section>
 
-      <section  id="projetos" class="Projetos">
+      <!-- PROJETOS -->
+      <section id="projetos" class="Projetos">
         <h2 class="Projetos-titulo">Projetos</h2>
         <div class="projetos-caixa">
+          <div class="projetos-card">
+            <img
+              src="img/projeto_1.png"
+              alt="Site de Academia"
+              class="projetos-imagem"
+            />
+            <div class="caixa-textos-projetos">
+              <h3 class="info-projetos">Site de Academia</h3>
+              <p class="paragrafo-projeto">
+                Meu Primeiro Projeto com HTML e CSS
+              </p>
+            </div>
+            <a
+              href="https://devraz02.github.io/SiteAcademia/"
+              class="btn-projeto"
+              target="_blank"
+              >Ir para o Site</a
+            >
+          </div>
 
           <div class="projetos-card">
-            <img src="img/projeto_1.png" alt="Projeto 1" class="projetos-imagem">
+            <img
+              src="img/Formtailwind.jpeg"
+              alt="Formulário com Tailwind"
+              class="projetos-imagem"
+            />
             <div class="caixa-textos-projetos">
-            <h3 class="info-projetos">Site de Academia</h3>
-            <p class="paragrafo-projeto">Meu Primeiro Projeto com HTML e CSS </p>
-          </div> 
-          <a href="https://devraz02.github.io/SiteAcademia/" class="btn-projeto" target="_blank">Ir para o Site</a>
+              <h3 class="info-projetos">Formulário / Tailwind</h3>
+              <p class="paragrafo-projeto">
+                Formulário simples e responsivo, desenvolvido com Tailwind CSS
+                para praticar componentes e estilização moderna.
+              </p>
+            </div>
+            <a
+              href="https://devraz02.github.io/Formulario-Taiwind/"
+              class="btn-projeto"
+              target="_blank"
+              >Ir para o Site</a
+            >
           </div>
 
           <div class="projetos-card">
-            <img src="img/Formtailwind.jpeg" alt="Projeto 2" class="projetos-imagem">
+            <img
+              src="img/Do-To-List.jpeg"
+              alt="Lista de Tarefas"
+              class="projetos-imagem"
+            />
             <div class="caixa-textos-projetos">
-            <h3 class="info-projetos">Formulário / Tailwind</h3>
-            <p class="paragrafo-projeto">Formulário simples e responsivo, desenvolvido com Tailwind CSS para praticar componentes e estilização moderna.</p>
-            
+              <h3 class="info-projetos">Lista de Tarefas</h3>
+              <p class="paragrafo-projeto">
+                Aplicação feita com HTML e CSS, com foco na lógica em JavaScript
+                para adicionar, marcar e remover tarefas.
+              </p>
+            </div>
+            <a
+              href="https://devraz02.github.io/Do-To-List/"
+              class="btn-projeto"
+              target="_blank"
+              >Ir para o Site</a
+            >
           </div>
-          <a href=" https://devraz02.github.io/Formulario-Taiwind/" class="btn-projeto" target="_blank">Ir para o Site</a>
-          </div>
-
-          <div class="projetos-card">
-            <img src="img/Do-To-List.jpeg" alt="Projeto 3" class="projetos-imagem"> 
-            <div class="caixa-textos-projetos">
-            <h3 class="info-projetos">Lista de Tarefas</h3>
-            <p class="paragrafo-projeto">Aplicação feita com HTML e CSS, com foco na lógica em JavaScript para adicionar, marcar e remover tarefas.</p>
-          </div>
-            <a href=" https://devraz02.github.io/Do-To-List/" class="btn-projeto" target="_blank">Ir para o Site</a>
-          </div>
+        </div>
       </section>
 
       <section id="contato" class="Contatos">
         <h2 class="Contatos-titulo">Entre em Contato</h2>
 
-        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+        <form
+          class="formulario-contato"
+          id="formulario"
+          onsubmit="enviarWhats(event)"
+        >
+          <div class="grupo-form">
+            <input placeholder="Digite seu Nome" class="campo-form" id="nome" />
+          </div>
 
           <div class="grupo-form">
-            <input placeholder="Digite seu Nome " class="campo-form" id="nome">
-          </div>
-          
-          <div class="grupo-form">
-            <textarea class="campo-form"placeholder="Digite sua Mensagem" rows="4" id="mensagem"></textarea>
+            <textarea
+              class="campo-form"
+              placeholder="Digite sua Mensagem"
+              rows="4"
+              id="mensagem"
+            ></textarea>
           </div>
 
-          <button type="submit" class="botao-form"> Enviar WhatsApp</button>
+          <button type="submit" class="botao-form">Enviar WhatsApp</button>
+
           <div class="caixa-textos-contato">
             <p>Outras redes sociais:</p>
 
             <div class="Git-Hub">
-            <a href="https://github.com/DevRaz02" target="_blank"><i class="bi-github"></i></a>
+              <a href="https://github.com/DevRaz02" target="_blank"
+                ><i class="bi-github"></i
+              ></a>
             </div>
             <div class="Linkedin">
-              <a href="https://www.linkedin.com/in/ra%C3%BAl-nascimento-852a512a1/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/ra%C3%BAl-nascimento-852a512a1/"
+                target="_blank"
+              >
                 <i class="bi bi-linkedin"></i>
               </a>
+            </div>
           </div>
+          <!-- FIM DAS DIVs de contato -->
         </form>
       </section>
+    </main>
 
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const config = {
-                particleCount: 90, 
-                colors: ['#B19CD9', '#6D28D9', '#2A1065'], 
-                maxSize: 5,
-                minSpeed: 0.2,
-                maxSpeed: 0.5
-            };
-            const canvas = document.getElementById('particulas-canvas');
-            const ctx = canvas.getContext('2d');
-            
-            function resizeCanvas() {
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-            }
-            resizeCanvas();
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const config = {
+          particleCount: 90,
+          colors: ["#B19CD9", "#6D28D9", "#2A1065"],
+          maxSize: 5,
+          minSpeed: 0.2,
+          maxSpeed: 0.5,
+        };
+        const canvas = document.getElementById("particulas-canvas");
+        const ctx = canvas.getContext("2d");
 
-            class Particle {
-                constructor() {
-                    this.reset();
-                }
-                
-                reset() {
-                    this.x = Math.random() * canvas.width;
-                    this.y = Math.random() * canvas.height * 1.5; 
-                    this.size = Math.random() * config.maxSize + 1;
-                    this.color = config.colors[Math.floor(Math.random() * config.colors.length)];
-                    this.speed = Math.random() * (config.maxSpeed - config.minSpeed) + config.minSpeed;
-                }
-                
-                update() {
-                    this.y -= this.speed;
-                    if (this.y < -this.size * 2) this.reset();
-                }
-                
-                draw() {
-                    ctx.beginPath();
-                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                    ctx.fillStyle = this.color;
-                    ctx.globalAlpha = 0.7;
-                    ctx.fill();
-                }
-            }
-        
-            const particles = [];
-            function initParticles() {
-                for (let i = 0; i < config.particleCount; i++) {
-                    particles.push(new Particle());
-                }
-            }
-        
-            function animate() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                particles.forEach(p => {
-                    p.update();
-                    p.draw();
-                });
-                requestAnimationFrame(animate);
-            }
-        
-            initParticles();
-            animate();
-            window.addEventListener('resize', () => {
-                resizeCanvas();
-            });
-        
-            if (window.innerWidth < 768) {
-                config.particleCount = 40;
-            }
-        });
-        
-        function enviarWhats(event) {
-          event.preventDefault()
-        
-          const nome = document.getElementById('nome').value;
-          const mensagem = document.getElementById('mensagem').value;
-          const telefone ='5511958336279';
-          
-          if(!nome || !mensagem) {
-            alert('Por favor, preencha todos os campos antes de enviar a mensagem.'); 
-            return;
-            }
-
-          const texto = `Olá! Me chamo ${nome} , ${mensagem}`
-          const msgFormatada = encodeURIComponent(texto)
-          const url = `https://wa.me/${telefone}?text=${msgFormatada}`
-
-          window.open(url, '_blank') 
+        function resizeCanvas() {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
         }
-        </script>
+        resizeCanvas();
+
+        class Particle {
+          constructor() {
+            this.reset();
+          }
+          reset() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height * 1.5;
+            this.size = Math.random() * config.maxSize + 1;
+            this.color =
+              config.colors[Math.floor(Math.random() * config.colors.length)];
+            this.speed =
+              Math.random() * (config.maxSpeed - config.minSpeed) +
+              config.minSpeed;
+          }
+          update() {
+            this.y -= this.speed;
+            if (this.y < -this.size * 2) this.reset();
+          }
+          draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = this.color;
+            ctx.globalAlpha = 0.7;
+            ctx.fill();
+          }
+        }
+
+        const particles = [];
+        function initParticles() {
+          for (let i = 0; i < config.particleCount; i++) {
+            particles.push(new Particle());
+          }
+        }
+
+        function animate() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          particles.forEach((p) => {
+            p.update();
+            p.draw();
+          });
+          requestAnimationFrame(animate);
+        }
+
+        initParticles();
+        animate();
+        window.addEventListener("resize", () => {
+          resizeCanvas();
+        });
+
+        if (window.innerWidth < 768) {
+          config.particleCount = 40;
+        }
+      });
+
+      function enviarWhats(event) {
+        event.preventDefault();
+
+        const nome = document.getElementById("nome").value;
+        const mensagem = document.getElementById("mensagem").value;
+        const telefone = "5511958336279";
+
+        if (!nome || !mensagem) {
+          alert(
+            "Por favor, preencha todos os campos antes de enviar a mensagem."
+          );
+          return;
+        }
+
+        const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+        const msgFormatada = encodeURIComponent(texto);
+        const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+
+        window.open(url, "_blank");
+      }
+    </script>
   </body>
 </html>
