@@ -229,8 +229,8 @@ span {
     justify-content: center;
     width: 100%;
     margin-top: 1rem;
-    background: var(--azul-escuro);
-    box-shadow: #6200ff px 1px 2px 2px;
+    background: var(--azul-claro);
+    box-shadow: #008cff px 1px 2px 2px;
     color: var(--branco);
     border: 2px solid var(--azul-escuro);
     border-radius: 5px;
@@ -241,7 +241,7 @@ span {
 }
 
 .btn-figma:hover {
-    box-shadow: 0 10px 10px var(--azul-escuro);
+    box-shadow: 0 10px 20px var(--azul-escuro);
     transform: translateY(-5px);
     color: var(--preto);
     background-color: var(--azul-claro);
