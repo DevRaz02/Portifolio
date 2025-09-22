@@ -206,6 +206,7 @@ span {
     height: 100px;
     width: 100%;
     object-fit: cover;
+    border-radius: 3px;
 }
 
 .btn-projeto {
@@ -224,30 +225,6 @@ span {
     cursor: pointer;
 }
 
-.btn-figma {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 1rem;
-    background: var(--azul-claro);
-    box-shadow: #008cff px 1px 2px 2px;
-    color: var(--branco);
-    border: 2px solid var(--azul-escuro);
-    border-radius: 5px;
-    padding: 0.5rem 0.4rem;
-    transition: all 0.2s ease;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.btn-figma:hover {
-    box-shadow: 0 10px 20px var(--azul-escuro);
-    transform: translateY(-5px);
-    color: var(--preto);
-    background-color: var(--azul-claro);
-}
-
-
 .btn-projeto:hover {
     box-shadow: 0 10px 20px var(--roxo-escuro);
     transform: translateY(-5px);
@@ -261,12 +238,25 @@ span {
 }
 
 .paragrafo-projeto {
-    color: rgba(226, 232, 240, 0.8);
-    line-height: 1.25rem;
+    color: rgba(105, 104, 104, 0.8);
+    text-align: center;
+    pointer-events: fill;
+    line-height: 1.4rem;
+}
+
+.paragrafo-projeto:hover {
+    color: var(--branco);
+    transition: .3s ease-in;
 }
 
 .info-projetos {
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.Divisorbtn {
+    display: flex;
+    gap: 1rem;
 }
 
 .Contatos {
