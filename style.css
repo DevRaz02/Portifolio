@@ -397,33 +397,101 @@ a {
     text-decoration: none;
 }
 
+@media (max-width: 900px) {
+    .slide {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+
+    .carousel {
+        width: 95%;
+    }
+}
+
 @media (max-width: 600px) {
-    .menu {
-        gap: 1rem;
+
+
+    .navbar {
         flex-wrap: wrap;
+        gap: 12px;
+        padding: 1rem 1.2rem;
+        justify-content: space-between;
+    }
+
+    .menu {
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
     }
 
     .cabecalho-titulo {
         font-size: 1.2rem;
+        text-align: center;
     }
+
 
     .sobre-caixa {
-        padding: 2rem;
-        margin: 2rem;
+        padding: 1.2rem;
+        margin: 1rem;
     }
+
 
     .projetos-caixa {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin: 20px;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 1rem;
     }
-
 
     .projetos-card {
         padding: 1rem;
     }
 
+    .slide {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 12px;
+    }
+
+    .produto-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     .caixa-textos-contato {
-        width: 16rem;
+        width: 100%;
+        max-width: 16rem;
+
+    }
+
+    input,
+    textarea,
+    button {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar a {
+        font-size: 1.05rem;
+    }
+
+    #inicio {
+        padding-left: 80px;
+    }
+
+    .sobre-lista {
+        text-align: center;
+    }
+
+    .logo {
+        width: 95px;
+    }
+
+    .img-container {
+        width: 130px;
+        height: 130px;
     }
 }
