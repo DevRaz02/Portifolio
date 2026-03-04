@@ -398,7 +398,7 @@ a {
     text-decoration: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .menu {
         gap: 1rem;
         flex-wrap: wrap;
