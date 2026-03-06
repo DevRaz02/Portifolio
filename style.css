@@ -411,12 +411,6 @@ a {
 
 @media (max-width: 600px) {
 
-    html,
-    body {
-        overflow-x: hidden;
-        max-width: 50%;
-    }
-
     img {
         max-width: 100%;
         height: auto;
