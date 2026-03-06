@@ -414,7 +414,7 @@ a {
     html,
     body {
         overflow-x: hidden;
-        max-width: 100%;
+        max-width: 50%;
     }
 
     img {
